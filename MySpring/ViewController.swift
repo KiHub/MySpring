@@ -25,6 +25,14 @@ class ViewController: UIViewController {
             UIColor.systemGray
                 .cgColor
         ]
+    
+        button.layer.shadowColor = UIColor.systemTeal.cgColor
+        button.layer.shadowOffset = CGSize(width:1,height: 2.0)
+        button.layer.shadowRadius = 5.5
+        button.layer.shadowOpacity = 20.0
+        button.layer.shadowOffset = CGSize(width: 3, height: 4)
+        button.layer.masksToBounds = false;
+        button.layer.shadowPath = UIBezierPath(roundedRect:button.bounds, cornerRadius:button.layer.cornerRadius).cgPath
         
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
@@ -32,6 +40,13 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: SpringButton) {
 
+        button.animation = "squeeze"
+        button.curve = "spring"
+        button.force = 1
+        button.duration = 1
+        button.delay = 0.1
+        button.animate()
+        
         
         if animationTypes[animationCont] != animationTypes.last {
             currentAnimation = animationTypes[animationCont]
