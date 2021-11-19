@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		0B4D17F82746B0D0009096A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D17F62746B0D0009096A4 /* Main.storyboard */; };
 		0B4D17FA2746B0D1009096A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D17F92746B0D1009096A4 /* Assets.xcassets */; };
 		0B4D17FD2746B0D1009096A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D17FB2746B0D1009096A4 /* LaunchScreen.storyboard */; };
+		0B4D18092747B7F8009096A4 /* Extesion - view settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D18082747B7F7009096A4 /* Extesion - view settings.swift */; };
+		1787D6DA7CD8E666DA302E8B /* Pods_MySpring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5127D8906B8D839A3C6FA8 /* Pods_MySpring.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0B4D17F92746B0D1009096A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B4D17FC2746B0D1009096A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B4D17FE2746B0D1009096A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B4D18082747B7F7009096A4 /* Extesion - view settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extesion - view settings.swift"; sourceTree = "<group>"; };
+		3C2C25F35CD6F7262A62C6AF /* Pods-MySpring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpring.release.xcconfig"; path = "Target Support Files/Pods-MySpring/Pods-MySpring.release.xcconfig"; sourceTree = "<group>"; };
+		50D032E7891CD8C0973193C3 /* Pods-MySpring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpring.debug.xcconfig"; path = "Target Support Files/Pods-MySpring/Pods-MySpring.debug.xcconfig"; sourceTree = "<group>"; };
+		9C5127D8906B8D839A3C6FA8 /* Pods_MySpring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySpring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1787D6DA7CD8E666DA302E8B /* Pods_MySpring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				0B4D17EF2746B0D0009096A4 /* MySpring */,
 				0B4D17EE2746B0D0009096A4 /* Products */,
+				E1824494CAE29D397E63CFFF /* Pods */,
+				87EAB1872F9B5D7C226733A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,7 @@
 			children = (
 				0B4D17F02746B0D0009096A4 /* AppDelegate.swift */,
 				0B4D17F22746B0D0009096A4 /* SceneDelegate.swift */,
+				0B4D18082747B7F7009096A4 /* Extesion - view settings.swift */,
 				0B4D17F42746B0D0009096A4 /* ViewController.swift */,
 				0B4D17F62746B0D0009096A4 /* Main.storyboard */,
 				0B4D17F92746B0D1009096A4 /* Assets.xcassets */,
@@ -67,6 +77,23 @@
 			path = MySpring;
 			sourceTree = "<group>";
 		};
+		87EAB1872F9B5D7C226733A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C5127D8906B8D839A3C6FA8 /* Pods_MySpring.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1824494CAE29D397E63CFFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50D032E7891CD8C0973193C3 /* Pods-MySpring.debug.xcconfig */,
+				3C2C25F35CD6F7262A62C6AF /* Pods-MySpring.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B4D18012746B0D1009096A4 /* Build configuration list for PBXNativeTarget "MySpring" */;
 			buildPhases = (
+				F9563921B2563603BB6AD96F /* [CP] Check Pods Manifest.lock */,
 				0B4D17E92746B0D0009096A4 /* Sources */,
 				0B4D17EA2746B0D0009096A4 /* Frameworks */,
 				0B4D17EB2746B0D0009096A4 /* Resources */,
+				60FB84ED9C160E595F6A4A0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +161,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60FB84ED9C160E595F6A4A0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySpring/Pods-MySpring-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySpring/Pods-MySpring-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySpring/Pods-MySpring-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9563921B2563603BB6AD96F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySpring-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B4D17E92746B0D0009096A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0B4D17F52746B0D0009096A4 /* ViewController.swift in Sources */,
+				0B4D18092747B7F8009096A4 /* Extesion - view settings.swift in Sources */,
 				0B4D17F12746B0D0009096A4 /* AppDelegate.swift in Sources */,
 				0B4D17F32746B0D0009096A4 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,12 +355,14 @@
 		};
 		0B4D18022746B0D1009096A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D032E7891CD8C0973193C3 /* Pods-MySpring.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = MySpring/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +376,14 @@
 		};
 		0B4D18032746B0D1009096A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2C25F35CD6F7262A62C6AF /* Pods-MySpring.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = MySpring/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

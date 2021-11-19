@@ -1,24 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MySpring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="384" translatesAutoresizingMaskIntoConstraints="NO" id="x33-0S-T7J">
+                                <rect key="frame" x="62" y="149.5" width="290.5" height="597.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iB2-fV-CvN" customClass="SpringView" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="0.0" width="290.5" height="163.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Animation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbe-Zx-ydI" customClass="SpringLabel" customModule="Spring">
+                                                <rect key="frame" x="53" y="29" width="198" height="105"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstItem="gbe-Zx-ydI" firstAttribute="top" secondItem="iB2-fV-CvN" secondAttribute="top" constant="53" id="U3D-74-ECv"/>
+                                            <constraint firstItem="gbe-Zx-ydI" firstAttribute="centerY" secondItem="iB2-fV-CvN" secondAttribute="centerY" id="jJ8-14-doN"/>
+                                            <constraint firstItem="gbe-Zx-ydI" firstAttribute="centerX" secondItem="iB2-fV-CvN" secondAttribute="centerX" id="ozj-Bg-8Ua"/>
+                                            <constraint firstItem="gbe-Zx-ydI" firstAttribute="centerX" secondItem="iB2-fV-CvN" secondAttribute="centerX" id="ryu-EL-nEY"/>
+                                            <constraint firstItem="gbe-Zx-ydI" firstAttribute="centerY" secondItem="iB2-fV-CvN" secondAttribute="centerY" id="s0N-GA-Pfj"/>
+                                            <constraint firstItem="gbe-Zx-ydI" firstAttribute="leading" secondItem="iB2-fV-CvN" secondAttribute="leading" constant="93" id="vzv-FY-b1D"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="morph"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="jJ8-14-doN"/>
+                                                <exclude reference="ozj-Bg-8Ua"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="jJ8-14-doN"/>
+                                                <include reference="ozj-Bg-8Ua"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-Je-37y" customClass="SpringButton" customModule="Spring">
+                                        <rect key="frame" x="45" y="547.5" width="200" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TqJ-SU-Zlf"/>
+                                            <constraint firstAttribute="width" constant="200" id="xrV-LS-PNM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Run animation">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xir-sS-H8R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="a2i-Je-37y" firstAttribute="width" secondItem="iB2-fV-CvN" secondAttribute="width" multiplier="0.688468" id="Ami-Fg-PxZ"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x33-0S-T7J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="0vY-T7-j9w"/>
+                            <constraint firstAttribute="trailing" secondItem="x33-0S-T7J" secondAttribute="trailing" constant="50" id="DSW-Ik-EN3"/>
+                            <constraint firstItem="x33-0S-T7J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yub-5C-e2o"/>
+                            <constraint firstItem="x33-0S-T7J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctG-OX-t8C"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0vY-T7-j9w"/>
+                                <exclude reference="DSW-Ik-EN3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="0vY-T7-j9w"/>
+                                <include reference="DSW-Ik-EN3"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="a2i-Je-37y" id="LhO-7s-Rje"/>
+                        <outlet property="textViewOutlet" destination="gbe-Zx-ydI" id="m01-PT-jbH"/>
+                        <outlet property="viewOutlet" destination="iB2-fV-CvN" id="Mtp-nY-mWh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="12.723214285714285" y="102.89855072463769"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
