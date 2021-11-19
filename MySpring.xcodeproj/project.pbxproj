@@ -14,6 +14,7 @@
 		0B4D17FA2746B0D1009096A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D17F92746B0D1009096A4 /* Assets.xcassets */; };
 		0B4D17FD2746B0D1009096A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4D17FB2746B0D1009096A4 /* LaunchScreen.storyboard */; };
 		0B4D18092747B7F8009096A4 /* Extesion - view settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D18082747B7F7009096A4 /* Extesion - view settings.swift */; };
+		0B4D180C2747E4C3009096A4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D180B2747E4C3009096A4 /* Model.swift */; };
 		1787D6DA7CD8E666DA302E8B /* Pods_MySpring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5127D8906B8D839A3C6FA8 /* Pods_MySpring.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		0B4D17FC2746B0D1009096A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B4D17FE2746B0D1009096A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B4D18082747B7F7009096A4 /* Extesion - view settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extesion - view settings.swift"; sourceTree = "<group>"; };
+		0B4D180B2747E4C3009096A4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3C2C25F35CD6F7262A62C6AF /* Pods-MySpring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpring.release.xcconfig"; path = "Target Support Files/Pods-MySpring/Pods-MySpring.release.xcconfig"; sourceTree = "<group>"; };
 		50D032E7891CD8C0973193C3 /* Pods-MySpring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpring.debug.xcconfig"; path = "Target Support Files/Pods-MySpring/Pods-MySpring.debug.xcconfig"; sourceTree = "<group>"; };
 		9C5127D8906B8D839A3C6FA8 /* Pods_MySpring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySpring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				0B4D17F02746B0D0009096A4 /* AppDelegate.swift */,
 				0B4D17F22746B0D0009096A4 /* SceneDelegate.swift */,
 				0B4D18082747B7F7009096A4 /* Extesion - view settings.swift */,
+				0B4D180B2747E4C3009096A4 /* Model.swift */,
 				0B4D17F42746B0D0009096A4 /* ViewController.swift */,
 				0B4D17F62746B0D0009096A4 /* Main.storyboard */,
 				0B4D17F92746B0D1009096A4 /* Assets.xcassets */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4D180C2747E4C3009096A4 /* Model.swift in Sources */,
 				0B4D17F52746B0D0009096A4 /* ViewController.swift in Sources */,
 				0B4D18092747B7F8009096A4 /* Extesion - view settings.swift in Sources */,
 				0B4D17F12746B0D0009096A4 /* AppDelegate.swift in Sources */,
